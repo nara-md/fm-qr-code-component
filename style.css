@@ -1,0 +1,64 @@
+/* Modern CSS Reset */
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Allow percentage-based heights in the application, and configure smooth scroll behavior */
+html, body {
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* 4. Set core body defaults */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 6. Inherit fonts for form inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows and line-breaks on headings or paragraphs */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Remove list styles on list items */
+ul, ol {
+  list-style: none;
+}
+
+/* 9. A element style inheritance (optional but convenient) */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 10. Create a root stacking context for utility hooks */
+#root, #__next {
+  isolation: isolate;
+}
