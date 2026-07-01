@@ -1,7 +1,24 @@
-/* Modern CSS Reset */
+/* Modern CSS Reset & Style Guide Variables */
+
+/* Style Guide Variables */
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-300: hsl(212, 45%, 89%);
+  --color-slate-500: hsl(216, 15%, 48%);
+  --color-slate-900: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --font-family: 'Outfit', sans-serif;
+  --font-size-paragraph: 15px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,7 +29,8 @@
 }
 
 /* 3. Allow percentage-based heights in the application, and configure smooth scroll behavior */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -22,8 +40,12 @@ html, body {
   }
 }
 
-/* 4. Set core body defaults */
+/* 4. Set core body defaults using the style guide */
 body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-paragraph);
+  color: var(--color-slate-900);
+  background-color: var(--color-slate-300);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,34 +53,96 @@ body {
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* 6. Inherit fonts for form inputs and buttons */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 7. Avoid text overflows and line-breaks on headings or paragraphs */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
 /* 8. Remove list styles on list items */
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-/* 9. A element style inheritance (optional but convenient) */
+/* 9. Link style inheritance */
 a {
   text-decoration: none;
   color: inherit;
 }
 
 /* 10. Create a root stacking context for utility hooks */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
+}
+
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+article {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 454px;
+  padding: 1rem;
+  text-align: center;
+}
+
+article img {
+  border-radius: 0.5rem;
+}
+
+article h1 {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-slate-900);
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+article p {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-slate-500);
+  margin-top: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
 }
