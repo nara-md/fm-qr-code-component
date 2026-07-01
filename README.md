@@ -1,6 +1,6 @@
 # Frontend Mentor - QR Code Component
 
-A clean, responsive, and pixel-perfect implementation of the [Frontend Mentor QR code component challenge](https://www.frontendmentor.io/challenges/qr-code-component-iort_aTav). 
+A clean, responsive, implementation of the [Frontend Mentor QR code component challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
 
 ## Features
 
