@@ -1,6 +1,10 @@
 # Frontend Mentor - QR Code Component
 
-A clean, responsive, implementation of the [Frontend Mentor QR code component challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+A clean, responsive implementation of the [Frontend Mentor QR code component challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H).
+
+## Screenshot
+
+![Screenshot of the QR Code Component](./assets/images/screenshot.png)
 
 ## Features
 
